@@ -1,0 +1,1 @@
+{"faiss_config_path": "./docstore/my_config.json", "embedding_dim": 128, "faiss_index_factory_str": "Flat", "return_embedding": true}
