@@ -40,8 +40,8 @@ def populateDocStore(document_store):
 
     # now we grab the files and throw them in a folder called GOT within a folder called data
     doc_dir = "./data/GOT"
-    # s3_url = "https://s3.eu-central-1.amazonaws.com/deepset.ai-farm-qa/datasets/documents/wiki_gameofthrones_txt12.zip"
-    # fetch_archive_from_http(url=s3_url, output_dir=doc_dir)
+    s3_url = "https://s3.eu-central-1.amazonaws.com/deepset.ai-farm-qa/datasets/documents/wiki_gameofthrones_txt12.zip"
+    fetch_archive_from_http(url=s3_url, output_dir=doc_dir)
 
     # Convert files to documents
     docs = convert_files_to_docs(dir_path=doc_dir, clean_func=clean_wiki_text, split_paragraphs=True)
